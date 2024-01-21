@@ -74,7 +74,7 @@ def get_daily_love():
     r = requests.get(url)
     all_dict = json.loads(r.text)
     sentence = all_dict['returnObj'][0]
-    daily_love = sentence
+    daily_love = "陆婉莹早上好"
     return daily_love
 
 
@@ -130,4 +130,4 @@ def weather_report(this_city):
 
 
 if __name__ == '__main__':
-    weather_report("淄博")
+    weather_report("西宁")
